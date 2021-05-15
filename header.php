@@ -3,5 +3,6 @@
 <HEADER>
     <meta charset="UTF-8">
     <title>UdoChudo.ru</title>
-    <?php echo "it's header" ?>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
 </HEADER>

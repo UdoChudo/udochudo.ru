@@ -5,6 +5,6 @@
 
 
 <?php
-echo "it's footer";
+
 ?>
 
