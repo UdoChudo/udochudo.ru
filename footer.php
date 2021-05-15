@@ -1,5 +1,5 @@
 
-
+<footer>
 
 </footer>
 
@@ -8,4 +8,3 @@
 echo "it's footer";
 ?>
 
-?>
