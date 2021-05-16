@@ -20,7 +20,13 @@ if(($_FILES['userfile']['type'] == 'image/png') && ($_FILES['userfile']['size'] 
      if ($size[0] < 65 && $size[1]<65) 
      { 
      // если размер изображения не более 500 пикселей по ширине и не более 1500 по  высоте 
-     echo "Файл загружен. Путь к файлу: <b>https://udochudo.ru/skins/".$uploadedfile."</b>"; 
+     echo " <link href=\"css/main.css\" rel=\"stylesheet\">
+            <div class=\"skin-sucess\" >
+                <div class=\"skin-sucess-notif\">
+                    <p>Скин успешно загружен</p>
+                </div>
+            </div>";
+     header("refresh: 10; url=https://udochudo.ru/index.php");
      } else {
      echo "Загружаемое изображение превышает допустимые нормы (ширина не более - 64; высота не более 64)"; 
      unlink($uploadfile); 
@@ -30,6 +36,6 @@ if(($_FILES['userfile']['type'] == 'image/png') && ($_FILES['userfile']['size'] 
    echo "Файл не загружен, вернитеcь и попробуйте еще раз";
    } 
 } else { 
-echo "Размер файла не должен превышать 512Кб";
-} 
+echo "Расширение файла должно быть формата .png и размер файла не должен превышать 512Кб";
+}
 ?>
